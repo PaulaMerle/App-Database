@@ -1,0 +1,43 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd">
+
+    <changeSet id="create_applications_table" author="Paula Videvik">
+        <createTable tableName="applications">
+            <column name="app_code" type="int" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+
+            <column name="name" type="varchar(100)"
+                    remarks="Name of the application"
+            >
+                <constraints nullable="false"/>
+            </column>
+            <column name="app_group" type="varchar(100)"
+                    remarks="Used for multiple modules that make up one application (UI and backend)"
+            >
+            </column>
+            <column name="app_type" type="varchar(30)"
+                    remarks="type or category (java;php;box;os component;database engine)"
+            >
+            </column>
+            <column name="description" type="text(20000)"
+                    remarks="Description of the application"
+            >
+            </column>
+            <column name="app_cost" type="int(15)"
+                    remarks="Cumulative cost of the application development"
+            >
+            </column>
+            <column name="last_modified" type="timestamp" defaultValue="NOW()"
+                    remarks="The last modification time of the record"
+            >
+                <constraints nullable="false"/>
+            </column>
+
+        </createTable>
+
+    </changeSet>
+
+</databaseChangeLog>

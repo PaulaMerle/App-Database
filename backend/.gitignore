@@ -1,0 +1,67 @@
+HELP.md
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# VIM working files
+*.swp
+tags
+Session.vim
+
+# JVM crash logs
+hs_err_pid*
+
+# Java artifacts and class files
+*.class
+*.jar
+*.war
+*.ear
+
+# Backup files created by some *NIX editors
+*~
+
+# KDE directory prefs
+.directory
+
+# Sometimes appearing Linux trash folder
+.Trash-*
+
+# (Linux) created when an open file is removed but is still being accessed
+.nfs*
+
+# Rule to not accidentally publish keyrings
+secring.*
